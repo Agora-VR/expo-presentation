@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Agora VR - Presentation Two</title>
+		<link rel="shortcut icon" href="lib/img/Agora-Favicon.png" />
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!-- Custom theme -->
+		<link rel="stylesheet" href="css/theme/agora.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- https://github.com/hakimel/reveal.js/ -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- SLIDE 1 -->
+				<section>
+					<section data-background="#dddddd">
+						<img src="lib/img/AgoraLogo-Transparent_HD.png" height="400px" draggable="false"/>
+						<a href="https://github.com/Agora-VR/Agora-VR" draggable="false"
+							style= "position: absolute;
+											bottom: 0px;
+											left: 0px;
+											width: 100px;
+											height: 100px;">
+							<img src="lib/img/QR-agora-github.png" draggable="false"/>
+						</a>
+					</section>
+					<section>
+						<h2><b>Agora VR</b></h2>
+						<br><h3>VR Therapy of Agoraphobia</h3>
+						<h4>and Social Anxiety Disorders</h4>
+						<p>
+							<small>
+								[ <span style="color: #ff0000">ℜ</span>utgers Capstone Group S20-61 ]
+								<br>Aryeh Ness - Daniel Nguyen - Ted Moseley - Michael Truong
+								<br>Dr. Grigore Burdea
+							</small>
+						</p>
+					</section>
+				</section>
+
+				<!-- SLIDE 2 -->
+				<section data-transition="convex" data-transition-speed="slow">
+					<section>
+						<h2>Review</h2>
+					</section>
+					<section>
+						Utilizing the Oculus Quest, our solution will immerse the patient within a virtual environment that dynamically
+						adapts to the stage of treatment, severity of the disorder, realtime integrated biosensor readings, and external
+						inputs from a clinician and caregiver. With our product, we plan to provide an alternative, more effective treatment
+						option for those who suffer from Agoraphobia and social anxiety disorders.
+					</section>
+					<section>
+						<h3>Our Goals</h3>
+						<br><ul>
+							<li class="fragment fade-up" data-autoslide="200">Public Speaking Scenarios (Auditorium & Meeting Room)</li>
+							<li class="fragment fade-up" data-autoslide="200">Animated Reactive People & Dynamic Sessions</li>
+							<li class="fragment fade-up" data-autoslide="200">Bluetooth Low Energy Heartrate Monitor</li>
+							<li class="fragment fade-up" data-autoslide="200">Tracking & Storing Data From Session</li>
+							<li class="fragment fade-up">Patient & Therapist Portal</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- SLIDE 3 -->
+				<section data-transition="convex" data-transition-speed="slow">
+					<section>
+						<h2>Design & Status</h2>
+					</section>
+					<section>
+						Two virtual scenarios involving public speaking:<br><br>
+						[1] Auditorium Presentation<br>
+						<img src="lib/img/Auditorium_1.png" height="400px" draggable="false"/>
+					</section>
+					<section>
+						[2] Meeting Room Presentation<br>
+						<img src="lib/img/MeetingRoom_1.png" height="400px" draggable="false"/>
+						<br><font size="1">*Blender Rendering</font>
+					</section>
+					<section>
+						These scenarios will include distractions caused by AI characters.<br><br>
+						<video controls loop height="400px">
+							<source src="lib/img/yawn.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<br><font size="1">Yawning Animation Example</font>
+					</section>
+					<section>
+						Heart Rate Monitoring and SpO2 levels<br><br>
+						<img src="lib/img/BLE-HRM_Diagram.png" height="400px" draggable="false"/><br>
+						Hardware Showcase <a href="https://docs.google.com/presentation/d/1-eov6MjFM_WIdu3p78eKS5lVypj1n0BanEjTVyKjWdo/edit?usp=sharing" target="_blank">Images</a>
+					</section>
+					<section>
+						Tracking Session Data:<br>
+						<br><ul>
+							<li>Eye Contact with audience members</li>
+							<li>Volume level, pause in speech</li>
+							<li>Distracted by an audience</li>
+							<li>Hand movement and shakey hands (common symptom)</li>
+							<li>Need to meet a certain performance requirement before increasing difficulty</li>
+						</ul>
+					</section>
+					<section>
+						Audio Recording:<br>
+						<img src="lib/img/SpeechToText_Diagram.png" height="400px" draggable="false"/>
+					</section>
+					<section>
+						Agora VR Web Portal <a href="https://agoravr.online/" target="_blank">
+							<img src="lib/img/QR-agora-online_white.png" height="50px" draggable="false"/></a><br>
+						<img src="lib/img/Webportal_SessionData.png" height="400px" draggable="false"/><br>
+					</section>
+					<section>
+						Web Portal Graphs<br>
+						<img src="lib/img/Webportal_SessionGraphs.png" height="400px" draggable="false"/><br>
+						<a href="https://confident-noyce-9514d7.netlify.com/" target="_blank">Demo</a>
+					</section>
+				</section>
+
+				<!-- SLIDE 4 -->
+				<section data-transition="convex" data-transition-speed="slow">
+					<section>
+						<h2>Project Implementation</h2>
+					</section>
+					<section>
+						<table>
+							<col width="200">
+							<col width="200">
+							<col width="200">
+							<col width="200">
+							<tbody>
+								<tr>
+									<td align="center"><a href="https://svelte.dev/" target="_blank">
+										<img src="https://raw.githubusercontent.com/sveltejs/branding/master/svelte-logo.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://docs.aiohttp.org/en/stable/" target="_blank">
+										<img src="https://docs.aiohttp.org/en/stable/_static/aiohttp-icon-128x128.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://www.python.org/" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://developer.android.com/" target="_blank">
+										<img src="https://source.android.com/setup/images/Android_symbol_green_RGB.png" height="100px" draggable="false"/></a></td>
+								</tr>
+								<tr>
+									<td align="center"><a href="https://www.postgresql.org/" target="_blank">
+										<img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://developer.oculus.com/" target="_blank">
+										<img src="lib/img/OculusLogo.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://unity.com/" target="_blank">
+										<img src="lib/img/UnityLogo.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://github.com/naudio/NAudio" target="_blank">
+										<img src="https://avatars0.githubusercontent.com/u/11003971?s=400&v=4" height="100px" draggable="false"/></a></td>
+								</tr>
+								<tr>
+									<td align="center"><a href="https://www.arduino.cc/" target="_blank">
+										<img src="https://content.arduino.cc/brand/arduino-white.svg" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://www.ibm.com/watson" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/IBM_Watson_Logo_2017.png/220px-IBM_Watson_Logo_2017.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://www.maximintegrated.com/en.html" target="_blank">
+										<img src="lib/img/MaximLogo.png" height="100px" draggable="false"/></a></td>
+									<td align="center"><a href="https://www.blender.org/" target="_blank">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1200px-Blender_logo_no_text.svg.png" height="100px" draggable="false"/></a></td>
+								</tr>
+						</tbody>
+						</table>
+					</section>
+				</section>
+
+				<!-- END CARD -->
+				<section data-transition="zoom" data-transition-speed="slow">
+					<section data-background="#dddddd">
+						<a href="#" class="navigate-down"></a>
+						<img src="lib/img/AgoraLogo-Transparent_HD.png" height="400px" draggable="false"/>
+						<a href="https://github.com/Agora-VR/Agora-VR" draggable="false"
+								style= "position: absolute;
+												bottom: 0px;
+												left: 0px;
+												width: 100px;
+												height: 100px;">
+							<img src="lib/img/QR-agora-github.png" draggable="false"/>
+						</a>
+					</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
